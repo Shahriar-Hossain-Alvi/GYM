@@ -1,0 +1,1261 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+* {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+}
+
+a {
+        text-decoration: none;
+}
+
+ul,
+ol {
+        list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+        margin: 0;
+        padding: 0;
+}
+
+.common-head h2{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        color: #222222;
+        text-transform: uppercase;
+}
+
+/* ========================================================================
+        common css end
+========================================================================= */
+
+/* ========================================================================
+        navbar part css start
+========================================================================= */
+
+.main-menu {
+        background: rgba(53, 53, 53, 0.25);
+        height: 50px;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        top: 30px;
+        z-index: 99999;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+}
+
+.bg{
+        background: #e23e38;
+}
+
+.main-menu.bg{
+        top: 0;
+}
+
+.main-menu .navbar-brand {
+        width: 245px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        background: #323232;
+        transform: skewX(-35deg);
+        -webkit-transform: skewX(-35deg);
+        -moz-transform: skewX(-35deg);
+        -ms-transform: skewX(-35deg);
+        -o-transform: skewX(-35deg);
+        position: relative;
+}
+
+.main-menu .navbar-brand::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 7px;
+        height: 100%;
+        background: #000;
+}
+
+.main-menu .navbar-brand::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        width: 7px;
+        height: 100%;
+        background: #000;
+}
+
+.main-menu .navbar-brand img {
+        transform: skewX(35deg);
+        -webkit-transform: skewX(35deg);
+        -moz-transform: skewX(35deg);
+        -ms-transform: skewX(35deg);
+        -o-transform: skewX(35deg);
+}
+
+.main-menu ul li a{
+        line-height: 50px;
+        font-family: 'Oswald', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #f1f1f1;
+        text-transform: uppercase;
+        padding: 0 12px;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+        position: relative;
+}
+
+.main-menu ul li a::after{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: #e23e38;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+}
+
+.main-menu ul li a:hover{
+        background: #ffffff;
+        color: #222222;
+}
+
+.main-menu ul li a:hover::after{
+        width: 100%;
+}
+/* ========================================================================
+        navbar part css end
+========================================================================= */
+
+
+
+
+/* ========================================================================
+        banner part css start
+========================================================================= */
+
+#banner{
+        margin-bottom: 80px;
+}
+
+#banner .banner-item{
+        padding-top: 248px;
+        padding-bottom: 117px;
+        position: relative;
+}
+
+#banner .banner-item::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+}
+
+#banner .banner-text {
+        position: relative;
+        z-index: 99;
+}
+
+#banner .banner-text h2{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        color: #ffffff;
+        text-transform: uppercase;
+        position: relative;
+}
+
+#banner .banner-text h2::before{
+        position: absolute;
+        content: '';
+        left: 6px;
+        width: 164px;
+        height: 3px;
+        background: #e23e38;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        clip-path: polygon(0 0, 100% 0, 93% 100%, 0% 100%);
+}
+
+#banner .banner-text h2::after{
+        position: absolute;
+        content: '';
+        right: 5px;
+        width: 109px;
+        height: 3px;
+        background: #e23e38;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+}
+
+#banner .banner-text h1{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+        color: #e23e38;
+        text-transform: uppercase;
+        position: relative;
+}
+
+#banner .banner-text h1::before{
+        position: absolute;
+        content: '';
+        left: 6px;
+        top: -19px;
+        width: 3px;
+        height: 199px;
+        background: #e23e38;
+}
+
+#banner .banner-text h1::after{
+        position: absolute;
+        content: '';
+        right: 5px;
+        top: -19px;
+        width: 3px;
+        height: 199px;
+        background: #e23e38;
+}
+
+#banner .banner-text p{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        color: #dddddd;
+        padding: 0 3px;
+        padding-top: 15px;
+        padding-bottom: 30px;
+        position: relative;
+}
+
+#banner .banner-text p::before {
+        position: absolute;
+        content: '';
+        bottom: -27px;
+        left: 6px;
+        width: 61px;
+        height: 3px;
+        background: #e23e38;
+}
+
+#banner .banner-text p::after {
+        position: absolute;
+        content: '';
+        bottom: -27px;
+        right: 5px;
+        width: 35px;
+        height: 3px;
+        background: #e23e38;
+        clip-path: polygon(2% 0, 100% 0, 100% 100%, 1% 100%);
+}
+
+#banner .banner-text a{
+        display: inline-block;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 10px 14px;
+        border: 1px solid #ffffff;
+        margin: 0 15px;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+}
+
+#banner .banner-text a:hover{
+        background: #e23e38;
+        border: 1px solid #e23e38;
+}
+
+#banner .slick-dots{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        bottom: 30px;
+}
+
+#banner .slick-dots li{
+        display: inline-block;
+        margin: 0 5px;
+}
+
+#banner .slick-dots li button{
+        font-size: 0;
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background: transparent;
+}
+
+#banner .slick-dots li.slick-active button{
+        width: 20px;
+        height: 20px;
+        background: #e23e38;
+        border: 1px solid #e23e38;
+}
+
+/* ========================================================================
+        banner part css end
+========================================================================= */
+
+
+
+
+/* ========================================================================
+        about part css start
+========================================================================= */
+
+#about{
+       padding-bottom: 80px;
+}
+
+#about .about-img{
+        position: relative;
+}
+
+#about .about-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+}
+
+#about .about-icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+}
+
+#about .about-icon i{
+        color: #000000;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        background: #e23e38;
+        font-size: 20px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+
+#about .about-text p{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #444444;
+        line-height: 24px;
+        text-align: center;
+}
+
+#about .about-text span{
+        display: block;
+        margin-top: 35px;
+}
+
+/* ========================================================================
+        about part css end
+========================================================================= */
+
+
+
+/* ========================================================================
+        gallery part css start
+========================================================================= */
+
+#gallery{
+        margin-bottom: 80px;
+}
+
+#gallery .gal-bg{
+        padding: 30px 0;
+        margin-top: 30px;
+        position: relative;
+}
+
+#gallery .gal-bg::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+}
+
+#gallery .gal-image{
+        position: relative;
+        z-index: 999;
+}
+
+#gallery .gal-image:first-child{
+        margin-bottom: 24px;
+}
+
+#gallery .gal-overlay{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        background: rgba(226, 62, 56, 0.5);
+        border: 5px solid #bdbbb0;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+}
+
+#gallery .gal-image:hover .gal-overlay{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+
+#gallery .gal-icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+}
+
+#gallery .gal-icon i{
+        color: #ffffff;
+        font-size: 24px;
+}
+
+/* ========================================================================
+        gallery part css end
+========================================================================= */
+
+
+
+
+/* ========================================================================
+        team part css start
+========================================================================= */
+
+
+#team .team-img{
+        position: relative;
+}
+
+#team .team-head{
+        margin-bottom: 70px;
+}
+
+#team .team-overlay{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        background: rgba(226, 62, 56, 0.5);
+        border: 5px solid #bdbbb0;
+        opacity: 0;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+}
+
+#team .team-icon{
+        text-align: right;
+        position: relative;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+}
+
+#team .team-icon i{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        margin: 5px 0;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+}
+
+#team .team-icon i:hover{
+        color: #1da0f2;
+        background: #ffffff;
+}
+
+#team .team-text h3{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #222222;
+        text-transform: uppercase;
+        padding-top: 20px;
+}
+
+#team .team-text h4{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #444444;
+        padding-top: 10px; 
+}
+
+#team .team-text p{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        line-height: 18px;
+        font-size: 13px;
+        color: #444444;
+        padding: 15px;
+        transform: scale(0);
+        transition: 0.4s;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+}
+
+#team .team-text{
+        border: 1px solid transparent;
+        border-top: 0px;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+}
+
+#team .team-main:hover .team-overlay{
+        opacity: 1;
+}
+
+#team .team-main:hover .team-text{
+        border: 1px solid #dddddd;
+        border-top: 0px;
+}
+
+#team .team-main:hover .team-text p{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+
+#team .team-main{
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+}
+
+#team .team-main:hover{
+        transform: translateY(-42px);
+        -webkit-transform: translateY(-42px);
+        -moz-transform: translateY(-42px);
+        -ms-transform: translateY(-42px);
+        -o-transform: translateY(-42px);
+}
+
+/* ========================================================================
+        team part css end
+========================================================================= */
+
+/* ========================================================================
+        testimonial part css start
+========================================================================= */
+
+#testimonial{
+        margin-bottom: 80px;
+}
+
+#testimonial .testimonial-head{
+        margin-bottom: 30px;
+}
+
+#testimonial .test-bg{
+        padding-top: 30px;
+        padding-bottom: 80px;
+        position: relative;
+        z-index: 1;
+}
+
+#testimonial .test-bg::after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: -1;
+}
+
+#testimonial .test-title h3{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding-bottom: 8px;
+}
+
+#testimonial .test-title h4{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #ffffff;
+        padding-bottom: 8px;
+}
+
+#testimonial .test-icon i{
+        color: #e23e38;
+        padding-bottom: 10px;
+}
+
+#testimonial .test-para p{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        color: #dddddd;
+}
+
+#testimonial .test-slider .slick-slide{
+        padding: 0 12px;
+}
+
+
+#testimonial .slick-dots{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        width: auto;
+        bottom: -40px;
+}
+
+#testimonial .slick-dots li{
+        display: inline-block;
+        margin: 0 5px;
+}
+
+#testimonial .slick-dots li button{
+        font-size: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        background: transparent;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+
+#testimonial .slick-dots li.slick-active button{
+        background: #e23e38;
+        border: 1px solid #e23e38;
+}
+
+
+
+/* ========================================================================
+        testimonial part css end
+========================================================================= */
+
+
+/* ========================================================================
+        membership part css start
+========================================================================= */
+
+
+
+#membership .membership-head{
+        margin-bottom: 30px;
+}
+
+#membership .member-inner h3{
+        background: #dddddd;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: #222222;
+        text-transform: uppercase;
+        padding: 20px 0;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+}
+
+#membership .member-inner h2{
+        background: url(../images/membership-1.jpg) no-repeat center;
+        background-size: cover;
+        padding: 35px 0;
+        position: relative;
+        z-index: 1;
+        color: #fff;
+        font-size: 48px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+}
+
+#membership .member-inner span{
+        font-size: 24px;
+}
+
+#membership .member-inner h2::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: -1;
+}
+
+#membership .member-inner ul{
+        background: #f1f1f1;
+}
+
+#membership .member-inner ul li{
+        padding-top: 25px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #444444;
+}
+
+#membership .member-inner ul li:first-child{
+        padding-top: 40px;
+}
+
+#membership .member-inner ul li:last-child{
+        padding-bottom: 40px;
+}
+
+#membership .member-inner a{
+        background: #dddddd;
+        display: block;
+        padding: 10px 0;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #222222;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+}
+
+#membership .member-inner:hover h3{
+        background: #e23e38;
+        color: #fff;
+}
+
+#membership .member-inner:hover a{
+        background: #e23e38;
+        color: #fff;
+}
+
+/* ========================================================================
+        membership part css end
+========================================================================= */
+
+
+
+/* ========================================================================
+        counter part css start
+========================================================================= */
+
+#count{
+        padding: 47px 0;
+        position: relative;
+        margin-bottom: 80px;
+        z-index: 1;
+}
+
+#count::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: -1;
+}
+
+#count .counter-item h4{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        color: #ffffff;
+}
+
+#count .counter-item p{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #ffffff;
+}
+
+/* ========================================================================
+        counter part css end
+========================================================================= */
+
+
+
+/* ========================================================================
+        class part css start
+========================================================================= */
+
+#classes{
+        padding-bottom: 80px;
+}
+
+#classes .class-head{
+        margin-bottom: 30px;
+}
+
+#classes .class-tab{
+        background: #f1f1f1;
+}
+
+#classes .class-tab li{
+        width: 16.66667%;
+}
+
+#classes .class-tab li button{
+        width: 100%;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #222222;
+        text-transform: uppercase;
+}
+
+#classes .class-tab .nav-link.active, .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: #e23e38;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
+
+.tab-body ul{
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.tab-body ul li{
+        margin-right: 5px;
+        width: 19.6%;
+        background: #f1f1f1;
+        padding: 50px 0;
+        text-align: center;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+}
+
+.tab-body ul li p{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #222222;
+}
+
+.tab-body ul li:hover{
+        background: #e23e38;
+}
+
+.tab-body ul li:hover p{
+        color: #ffffff;
+}
+
+#classes .class-tab li:hover button{
+        color: #222222;
+}
+
+.tab-body ul li:first-child,
+.tab-body ul li:nth-child(2),
+.tab-body ul li:nth-child(3),
+.tab-body ul li:nth-child(4),
+.tab-body ul li:nth-child(5){
+        margin-bottom: 5px;
+}
+
+.tab-body ul li:nth-child(5),
+.tab-body ul li:nth-child(10){
+        margin-right: 0;
+}
+
+
+#classes ul li i{
+        font-size: 24px;
+}
+
+#classes ul li:hover i{
+        color: #ffffff;
+}
+
+/* ========================================================================
+        class part css end
+========================================================================= */
+
+/* ========================================================================
+        spomsor part css start
+========================================================================= */
+
+#sponsor{
+        padding-bottom: 80px;
+}
+
+#sponsor .sponsor-slider .slick-slide{
+        padding: 0 12px;
+}
+
+#sponsor .sponsor-img{
+        cursor: pointer;
+}
+
+#sponsor .sponsor-slider .prev,.nxt{
+        position: absolute;
+        top: 50%;
+        font-size: 30px;
+        color: #444444;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        width: auto;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+}
+
+#sponsor .sponsor-slider .prev{
+        left: -50px;
+}
+
+#sponsor .sponsor-slider .prev:hover{
+        color: #e23e38;
+}
+
+#sponsor .sponsor-slider .nxt{
+        right: -50px;
+}
+
+#sponsor .sponsor-slider .nxt:hover{
+        color: #e23e38;
+}
+
+/* ========================================================================
+        spomsor part css end
+========================================================================= */
+
+
+
+
+/* ========================================================================
+        footer part css start
+========================================================================= */
+
+#footer{
+        background: url(../images/footer-bg.jpg) no-repeat center;
+        background-size: cover;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        position: relative;
+        z-index: 1;
+}
+
+#footer::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        z-index: -1;
+}
+
+#footer .footer-head h3{
+        font-family: 'Oswald', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+}
+
+#footer .first-mid-text p{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        color: #dddddd;
+        padding-bottom: 9px;
+}
+
+.second-mid-icon i{
+        color: #1da1f2;
+}
+
+.second-mid-text p{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        color: #dddddd;
+        margin-left: -20px;
+}
+
+.second-mid-text p span{
+        display: block;
+        font-weight: 600;
+}
+
+.second-mid-text p:first-child{
+        padding-bottom: 30px;
+}
+
+.footer-img ul{
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.footer-img ul li{
+        width: 22%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+}
+
+.footer-img ul li:nth-child(4),
+.footer-img ul li:nth-child(8),
+.footer-img ul li:nth-child(12){
+        margin-right: 0;
+}
+
+.footer-img ul li:nth-child(9),
+.footer-img ul li:nth-child(10),
+.footer-img ul li:nth-child(11),
+.footer-img ul li:nth-child(12){
+        margin-bottom: 0;
+}
+
+.contact-address p{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        color: #dddddd;
+        line-height: 18px;
+        padding-bottom: 15px;
+}
+
+.contact-address p i{
+        color: #e23e38;
+        padding-right: 5px;
+}
+
+.contact-address p:last-child{
+        padding-bottom: 0;
+}
+
+.social h3{
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 20px 0;
+}
+
+.social ul li{
+        display: inline-block;
+}
+
+.social ul li i{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border: 1px solid #dddddd;
+        color: #dddddd;
+        margin: 0 5px;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+}
+
+.social ul li i:first-child{
+        margin-left: 0;
+}
+
+.social ul li i:hover{
+        background: #e23e38;
+        border: 1px solid #e23e38;
+}
+
+.mid-part{
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        padding-top: 30px;
+        margin-top: 30px;
+}
+
+.copyright-text h3{
+        padding-top: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #ffffff;
+}
+
+.copyright-text h3 span{
+        color: #e23e38;
+}
+
+/* ========================================================================
+        footer part css end
+========================================================================= */
+
+
+
+/* ========================================================================
+        back-to-top part css start
+========================================================================= */
+
+.back-to-top{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 99999;
+}
+
+
+.back-to-top i{
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        text-align: center;
+        background: #e23e38;
+        color: #fff;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        cursor: pointer;
+}
+
+
+.ColorSwitcher {
+	z-index: 999999;
+}

@@ -1,0 +1,96 @@
+
+.main-menu ul li a::after {
+	background: #24ffff;
+}
+
+.bg{
+    background: #24ffff;
+}
+
+#banner .banner-text h1 {
+    color: #24ffff;
+}
+
+#banner .banner-text a:hover {
+	background: #24ffff;
+	border: 1px solid #24ffff;
+}
+
+#banner .banner-text h2::before {
+    background: #24ffff;
+}
+
+#banner .banner-text h2::after {
+    background: #24ffff;
+}
+
+#banner .banner-text h1::before {
+    background: #24ffff;
+}
+
+#banner .banner-text h1::after {
+    background: #24ffff;
+}
+
+#banner .banner-text p::before {
+    background: #24ffff;
+}
+
+#banner .banner-text p::after {
+    background: #24ffff;
+}
+
+#banner .slick-dots li.slick-active button {
+    background: #24ffff;
+    border: 1px solid #24ffff;
+}
+
+#about .about-icon i {
+	background: #24ffff;
+}
+
+#gallery .gal-overlay {
+	background: rgba(36, 255, 255, 0.5);
+}
+
+#team .team-overlay {
+	background: rgba(36, 255, 255, 0.5);
+}
+
+#testimonial .test-icon i {
+	color: #24ffff;
+}
+
+#testimonial .slick-dots li.slick-active button {
+	background: #24ffff;
+	border: 1px solid #24ffff;
+}
+
+#membership .member-inner:hover h3 {
+	background: #24ffff;
+}
+
+#membership .member-inner:hover a {
+	background: #24ffff;
+}
+
+#classes .class-tab .nav-link.active, .nav-pills .show > .nav-link {
+	background-color: #24ffff;
+}
+
+.tab-body ul li:hover {
+	background: #24ffff;
+}
+
+.social ul li i:hover {
+	background: #24ffff;
+	border: 1px solid #24ffff;
+}
+
+.copyright-text h3 span {
+	color: #24ffff;
+}
+
+.back-to-top i {
+	background: #24ffff;
+}
